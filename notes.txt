@@ -1,0 +1,21 @@
+The issue you're running into is because you're on Windows, and the path you're using:
+
+bash
+
+source venv/bin/activate
+is for Linux/MacOS. On Windows, you should activate your virtual environment like this:
+
+For Git Bash or PowerShell:
+bash
+
+source venv/Scripts/activate
+or
+
+bash
+
+. venv/Scripts/activate
+For Command Prompt (CMD):
+cmd
+
+venv\Scripts\activate.bat
+Once activated, you should see (venv) appear at the beginning of your terminal prompt, indicating that the virtual environment is active.
